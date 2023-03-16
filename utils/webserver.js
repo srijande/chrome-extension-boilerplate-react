@@ -8,6 +8,9 @@ var WebpackDevServer = require('webpack-dev-server'),
   config = require('../webpack.config'),
   env = require('./env'),
   path = require('path');
+  google = require('googleapis');
+  fs = require('fs');
+  readline = require('readline');
 
 var options = config.chromeExtensionBoilerplate || {};
 var excludeEntriesToHotReload = options.notHotReload || [];
